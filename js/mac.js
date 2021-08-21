@@ -122,7 +122,7 @@ document.getElementById('btn-coupon').addEventListener('click',function(){
         const discounts = (totalAmmount*20) /100;
         const totalDiscount = totalAmmount - discounts ;
         totalCouponDiscount.innerText = totalDiscount;
-
+        couponInput.value = '';
     }
 
 
