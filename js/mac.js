@@ -16,7 +16,6 @@ function partsPrice(product,price){
  configaration  mac function Ends 
  --------------------------------------*/
 
-
 /*-------------------------------
  memory handlers start-
  --------------------------------- */
@@ -43,21 +42,16 @@ document.getElementById('256gb-ssd').addEventListener('click',function(){
 
 })
 document.getElementById('512gb-ssd').addEventListener('click',function(){
-
     partsPrice('storage-cost',100);
 
 })
 document.getElementById('1tb-ssd').addEventListener('click',function(){
-
     partsPrice('storage-cost',180);
-
 })
 
 /*---------------------------
  Storage handlers Ends       
  ------------------------------*/
-
-
 
 /*-----------------------------
  delivery-charge  handlers Start 
@@ -68,15 +62,12 @@ partsPrice('delivery-charge', 00);
 });
 
 document.getElementById('cost-delivery').addEventListener('click',function(){
-
     partsPrice('delivery-charge', 20);
- 
 })
 
 /*-----------------------------
  delivery-charge  handlers Ends 
  ---------------------------------*/
-
 
 
 /*---------------------------
@@ -98,15 +89,11 @@ const deliveryCost = inputPartsPrice('delivery-charge');
 const totalAmmount = memoreyCost + storageCost + deliveryCost + bestPrice;
 document.getElementById('total-discounts').innerText =totalAmmount;
 document.getElementById('total-price').innerText = totalAmmount;
-
 };
-
 
 /*------------------------
  total partsPrice Ends
  ------------------------- */
-
-
 
 /*-----------------------
  coupon code handlers Start
@@ -124,13 +111,6 @@ document.getElementById('btn-coupon').addEventListener('click',function(){
         totalCouponDiscount.innerText = totalDiscount;
         couponInput.value = '';
     }
-
-
-else{
-totalCouponDiscount.innerText=totalAmmount;
-
-}
-
 });
 
 /*-----------------------
